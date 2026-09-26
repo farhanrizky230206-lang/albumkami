@@ -117,11 +117,12 @@ img,video{max-width:100%;display:block}
 .app{min-height:100vh}
 .topbar{
   height:82px;
-  width:min(1180px,calc(100% - 32px));
-  margin:0 auto;
+  width:100%;
+  margin:0;
+  padding:0 max(24px, calc((100vw - 1180px) / 2));
   display:flex;align-items:center;justify-content:space-between;
   position:sticky;top:0;z-index:60;
-  background:rgba(255,249,247,.82);
+  background:rgba(255,249,247,.92);
   backdrop-filter:blur(16px);
   border-bottom:1px solid var(--line)
 }
@@ -403,7 +404,7 @@ footer p{margin:8px 0}
 }
 @media(max-width:560px){
   .opening-card{padding:40px 22px;border-radius:28px}
-  .topbar{height:70px}
+  .topbar{height:70px;padding:0 16px}
   .hero{min-height:auto;padding-top:52px;padding-bottom:60px}
   .hero-copy h2{font-size:3.25rem}
   .hero-visual{min-height:440px}
